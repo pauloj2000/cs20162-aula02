@@ -37,10 +37,6 @@ public class Calendario
      * ou o ano for menor que 1753.
      */
     public static int diaDaSemana(int d, int m, int a) {
-        if (d < 1 || d > 31) {
-            throw new IllegalArgumentException("dia inválido");
-        }
-
         if (m < 1 || m > 12) {
             throw new IllegalArgumentException("mês inválido");
         }
