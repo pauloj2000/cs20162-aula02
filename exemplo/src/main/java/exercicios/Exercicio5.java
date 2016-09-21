@@ -9,7 +9,7 @@ package exercicios;
  *
  * @author aluno
  */
-public class Exericicio5 {
+public class Exercicio5 {
     public static boolean propriedade153(int n){
         int i,j,k;
         i = n/100;

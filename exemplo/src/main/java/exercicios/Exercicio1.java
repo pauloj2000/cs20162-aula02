@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author aluno
  */
 public class Exercicio1 {
-    public static void main(String[] args) {
+    public static void somaNaturais(){
         int i = 1,s = 2,n;
         
         System.out.println(" Digite o valor de N ");
