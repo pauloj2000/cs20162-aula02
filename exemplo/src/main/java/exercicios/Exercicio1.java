@@ -12,17 +12,16 @@ import java.util.Scanner;
  * @author aluno
  */
 public class Exercicio1 {
-    public static void somaNaturais(){
-        int i = 1,s = 2,n;
-        
-        System.out.println(" Digite o valor de N ");
-        Scanner ler = new Scanner(System.in);
-        n = Integer.parseInt(ler.nextLine());
-        while(i<n){
-            s = s + i;
-            i = i + i;
+    public static int somaNaturais( int n ){
+        int i = 1,s = 2;
+        if( n < 1 ){
+            throw new IllegalArgumentException(" Exige n >= 1 ");
         }
-        System.out.println(" A soma dos naturais até " + n + " é : " + s );
+        while( i < n ){
+            s = s + i;
+            i = i + 1;
+        }
+        return s;
     }
     
 }
