@@ -5,8 +5,6 @@
  */
 package exercicios;
 
-import java.util.Scanner;
-
 /**
  *
  * @author aluno

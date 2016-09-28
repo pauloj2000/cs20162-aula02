@@ -5,10 +5,6 @@
  */
 package exercicios;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -33,7 +29,6 @@ public class Exercicio3Test {
     
     @Test
     public void testPotenciaUsandoSoma() {
-        System.out.println("potenciaUsandoSoma");
         int x = 2;
         int y = 2;
         int expResult = 4;

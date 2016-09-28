@@ -11,6 +11,9 @@ package exercicios;
  */
 public class Exercicio4 {
     public static boolean propriedade3025(int n){
+        if( n < 0 || n >= 9999 ){
+            throw new IllegalArgumentException(" Exige 0 < n < 9999 ");
+        }
         int i,j,k;
         i = n/100;
         j = n%100;

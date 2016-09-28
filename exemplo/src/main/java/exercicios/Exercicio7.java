@@ -11,8 +11,14 @@ package exercicios;
  */
 public class Exercicio7 {
     public static void crivoEratostenes( int a[], int n ){
+        if( n <= 1 ){
+            throw new IllegalArgumentException(" Exige n > 1 ");
+        }
         int i = 2;
         int c;
+        if( i <= n && i <= 2 ){
+            a[i] = 0;
+        }
         while( i <= n/2 ){
             if( a[i] == 0 ){
               c = i + i;  

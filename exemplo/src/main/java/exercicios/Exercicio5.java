@@ -11,11 +11,14 @@ package exercicios;
  */
 public class Exercicio5 {
     public static boolean propriedade153(int n){
+        if( n < 0 || n >= 9999 ){
+            throw new IllegalArgumentException(" Exige 0 < n < 9999 ");
+        }
         int i,j,k;
         i = n/100;
-        j = (n - 100*i) / 10;
+        j = (n - ( 100*i )) / 10;
         k = n % 10;
-        return (i*3 + j*3 + k*3) == n;
+        return (i*i*i + j*j*j + k*k*k) == n;
     }
     
 }
