@@ -5,6 +5,7 @@
  */
 package exercicios;
 
+import primeirosExercicios.Exercicio3;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

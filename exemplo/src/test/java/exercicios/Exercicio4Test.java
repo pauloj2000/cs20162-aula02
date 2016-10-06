@@ -5,6 +5,7 @@
  */
 package exercicios;
 
+import primeirosExercicios.Exercicio4;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

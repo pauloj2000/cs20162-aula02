@@ -5,6 +5,7 @@
  */
 package exercicios;
 
+import primeirosExercicios.Exercicio7;
 import org.junit.Test;
 
 /**
