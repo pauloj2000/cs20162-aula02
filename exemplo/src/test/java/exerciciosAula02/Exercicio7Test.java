@@ -3,30 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicios;
+package exerciciosAula02;
 
-import primeirosExercicios.Exercicio8;
+import exerciciosAula02.Exercicio7;
 import org.junit.Test;
 
 /**
  *
- * @author aluno
+ * @author Alunoinf_2
  */
-public class Exercicio8Test {
+public class Exercicio7Test {
     
-    public Exercicio8Test() {
+    public Exercicio7Test() {
     }
-    
-    /**
-     *
-     */
     @Test(expected = IllegalArgumentException.class)
     public void nIgualA1(){
-        Exercicio8.numeroHarmonico(1);
+        int vetor[] = new int[10];
+        Exercicio7.crivoEratostenes(vetor,1);
     }
     
     @Test(expected = IllegalArgumentException.class)
     public void nMenorQue1(){
-        Exercicio8.numeroHarmonico(-3);
+        int vetor[] = new int[10];
+        Exercicio7.crivoEratostenes(vetor,0);
     }
 }

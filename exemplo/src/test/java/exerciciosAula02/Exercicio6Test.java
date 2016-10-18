@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicios;
+package exerciciosAula02;
 
-import primeirosExercicios.Exercicio6;
+import exerciciosAula02.Exercicio6;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

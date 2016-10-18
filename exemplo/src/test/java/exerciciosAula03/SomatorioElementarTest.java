@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicios;
+package exerciciosAula03;
 
-import primeirosExercicios.Exercicio4;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Alunoinf_2
+ * @author paulo_000
  */
-public class Exercicio4Test {
+public class SomatorioElementarTest {
     
-    public Exercicio4Test() {
+    public SomatorioElementarTest() {
     }
     
     @BeforeClass
@@ -39,14 +38,14 @@ public class Exercicio4Test {
     }
 
     /**
-     * Test of propriedade3025 method, of class Exercicio4.
+     * Test of somaNaturais method, of class SomatorioElementar.
      */
-    @org.junit.Test
-    public void testPropriedade3025() {
-        System.out.println("propriedade3025");
+    @Test
+    public void testSomaNaturais() {
+        System.out.println("somaNaturais");
         int n = 0;
-        boolean expResult = false;
-        boolean result = Exercicio4.propriedade3025(n);
+        int expResult = 0;
+        int result = SomatorioElementar.somaNaturais(n);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
