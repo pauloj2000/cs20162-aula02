@@ -19,30 +19,34 @@ import static org.junit.Assert.*;
 
 public class Exercicio6Test {
     
-    public Exercicio6Test() {
+        @Test(expected = IllegalArgumentException.class)
+    public void numeroNegativoInvalidoPrimo() {
+        Exercicio6.numeroPrimo(-2);
     }
     
-    /**
-     *
-     */
     @Test(expected = IllegalArgumentException.class)
-    public void nMenorIgualA1(){
+    public void numeroInvalidoPrimo1() {
+        Exercicio6.numeroPrimo(0);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void numeroInvalidoPrimo2() {
         Exercicio6.numeroPrimo(1);
     }
     
     @Test
-    public void testNumeroPrimo() {
-        int n = 13;
-        boolean expResult = true;
-        boolean result = Exercicio6.numeroPrimo(n);
-        assertEquals(expResult, result);
+    public void numeroValidoPrimo1() {
+        assertEquals(true, Exercicio6.numeroPrimo(2));
     }
     
-    public void secondTestNumeroPrimo() {
-        int n = 14;
-        boolean expResult = false;
-        boolean result = Exercicio6.numeroPrimo(n);
-        assertEquals(expResult, result);
+    @Test
+    public void numeroValidoPrimo2() {
+        assertEquals(false, Exercicio6.numeroPrimo(6));
+    }
+    
+    @Test
+    public void numeroValidoPrimo3() {
+        assertEquals(true, Exercicio6.numeroPrimo(11));
     }
     
 }

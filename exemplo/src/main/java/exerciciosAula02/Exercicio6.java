@@ -21,15 +21,19 @@ public class Exercicio6 {
      * @param n O número que deseja descobrir.
      * @return True se for primo e False se não for.
      */
-    public static boolean numeroPrimo( int n ) throws IllegalArgumentException {
-        int i = 2;
-        if( n <= 1 ){
-            throw new IllegalArgumentException(" Exige n > 1 ");
+    public static boolean numeroPrimo(final int n) 
+            throws IllegalArgumentException {
+        
+        if (n <= 1) {
+            throw new IllegalArgumentException(" Exige n > 1. ");
         }
-        while( i <= n-1 ){
-            if( n % i == 0 ){
+
+        int i = 2;
+        while (i <= (n - 1)) {
+            if (n % i == 0) {
                 return false;
             }
+            i++;
         }
         return true;
     }
