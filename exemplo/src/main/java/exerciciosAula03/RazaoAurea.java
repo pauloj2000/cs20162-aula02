@@ -37,7 +37,7 @@ public class RazaoAurea {
         if( x < 0 ){
             throw new IllegalArgumentException(" Exige x >= 0 ");
         }
-        if( k < 0 ){
+        if( y < 0 ){
             throw new IllegalArgumentException(" Exige y >= 0 ");
         }
         if( x >= y ){

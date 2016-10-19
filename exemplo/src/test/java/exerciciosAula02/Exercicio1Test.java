@@ -19,7 +19,10 @@ import static org.junit.Assert.*;
 
 public class Exercicio1Test {
     
+    Exercicio1 x;
+    
     public Exercicio1Test() {
+        x = new Exercicio1();
     }
     
     @Test(expected = IllegalArgumentException.class)
@@ -30,15 +33,5 @@ public class Exercicio1Test {
     @Test
     public void testeDo2(){
         assertEquals(3, Exercicio1.somaNaturais(2));
-    }
-    
-    @Test
-    public void cemPorCento(){
-        new Exercicio1();
-    }
-
-    /**
-     * Test of somaNaturais method, of class Exercicio1.
-     */
-    
+    }  
 }

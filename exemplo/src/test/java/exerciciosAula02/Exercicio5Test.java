@@ -19,7 +19,10 @@ import static org.junit.Assert.*;
 
 public class Exercicio5Test {
     
+    Exercicio5 x;
+    
     public Exercicio5Test() {
+        x = new Exercicio5();
     }
     
     @Test(expected = IllegalArgumentException.class)

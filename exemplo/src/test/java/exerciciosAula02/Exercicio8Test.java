@@ -18,12 +18,12 @@ import org.junit.Test;
 
 public class Exercicio8Test {
     
+    Exercicio8 x;
+    
     public Exercicio8Test() {
+        x = new Exercicio8();
     }
     
-    /**
-     *
-     */
     @Test(expected = IllegalArgumentException.class)
     public void nIgualA1(){
         Exercicio8.numeroHarmonico(1);

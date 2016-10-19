@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class Exercicio6Test {
     
+    Exercicio6 x;
+    
+    public Exercicio6Test() {
+        x = new Exercicio6();
+    }
+    
         @Test(expected = IllegalArgumentException.class)
     public void numeroNegativoInvalidoPrimo() {
         Exercicio6.numeroPrimo(-2);

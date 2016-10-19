@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class FatorialTest {
     
+    Fatorial p;
+    
+    public FatorialTest() {
+        p = new Fatorial();
+    }
+    
     @Test(expected = IllegalArgumentException.class)
     public void nMenorQueUm(){
         Fatorial.calcularFatorial(-1);

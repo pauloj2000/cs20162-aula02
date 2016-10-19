@@ -24,7 +24,10 @@ public class SomatorioElementarTest {
         SomatorioElementar.somaNaturais(0);
     }
     
+    SomatorioElementar s;
+    
     public SomatorioElementarTest() {
+        s = new SomatorioElementar();
     }
 
     /**

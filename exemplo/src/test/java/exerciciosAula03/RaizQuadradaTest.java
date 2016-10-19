@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class RaizQuadradaTest {
     
+    RaizQuadrada r;
+    
+    public RaizQuadradaTest() {
+        r = new RaizQuadrada();
+    }
+    
     @Test(expected = IllegalArgumentException.class)
     public void nMenorIgualAZero(){
         RaizQuadrada.raizQuadrada(0, 0);

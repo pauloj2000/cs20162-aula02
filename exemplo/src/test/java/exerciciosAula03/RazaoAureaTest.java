@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class RazaoAureaTest {
     
+    RazaoAurea r;
+    
+    public RazaoAureaTest() {
+        r = new RazaoAurea();
+    }
+    
     @Test(expected = IllegalArgumentException.class)
     public void xMenorQueZero(){
         RazaoAurea.razaoAurea(-2, 2, 3);
@@ -30,12 +36,17 @@ public class RazaoAureaTest {
     }
     
     @Test(expected = IllegalArgumentException.class)
-    public void xMaiorQueY(){
-        RazaoAurea.razaoAurea(5, 1, 4);
+    public void xMaiorIgualAY(){
+        RazaoAurea.razaoAurea(10, 2, 2);
     }
     
     @Test
     public void testRazaoAurea() {
+        assertEquals(1.618,RazaoAurea.razaoAurea(2, 3, 3), 1.111);
+    }
+    
+    @Test
+    public void testRazaoAurea1() {
         int x = 0;
         int y = 1;
         int z = 1;

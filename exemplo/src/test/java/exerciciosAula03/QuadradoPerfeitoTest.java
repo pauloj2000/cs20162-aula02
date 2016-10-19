@@ -18,6 +18,11 @@ import static org.junit.Assert.*;
  */
 
 public class QuadradoPerfeitoTest {
+    QuadradoPerfeito q;
+    
+    public QuadradoPerfeitoTest() {
+        q = new QuadradoPerfeito();
+    }
     
     @Test(expected = IllegalArgumentException.class)
     public void kMenorQueUm(){

@@ -19,7 +19,10 @@ import org.junit.Test;
 
 public class Exercicio4Test {
     
+    Exercicio4 x;
+    
     public Exercicio4Test() {
+        x = new Exercicio4();
     }
     
     @Test(expected = IllegalArgumentException.class)

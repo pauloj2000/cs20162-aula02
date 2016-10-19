@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class LogaritmoNaturalTest {
     
+    LogaritmoNatural x;
+        
+    public LogaritmoNaturalTest() {
+        x = new LogaritmoNatural();
+    }
+    
     @Test(expected = IllegalArgumentException.class)
     public void nMenorQueUm(){
         LogaritmoNatural.logNatural(0, 2);

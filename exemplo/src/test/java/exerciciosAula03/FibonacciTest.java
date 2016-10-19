@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 
 public class FibonacciTest {
     
+    Fibonacci f;
+    
+    public FibonacciTest() {
+        f = new Fibonacci();
+    }
+    
     @Test(expected = IllegalArgumentException.class)
     public void nMenorQueZero(){
         Fibonacci.calcularFibonacci(-1);

@@ -24,6 +24,12 @@ public class CalculoPiTest {
         CalculoPi.calcularPi(0);
     }
     
+    CalculoPi p;
+    
+    public CalculoPiTest() {
+        p = new CalculoPi();
+    }
+    
     @Test
     public void testCalcularPi() {
         int n = 1;
