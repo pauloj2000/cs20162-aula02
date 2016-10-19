@@ -14,11 +14,14 @@ package exerciciosAula02;
  * @author Paulo Junio Sales Rodrigues
  */
 
-/**
-* Método que resulta na soma dos primeiros números naturais.
-*/
 public class Exercicio1 {
-    public static int somaNaturais( int n ){
+
+    /**
+     * Método que resulta na soma dos primeiros números naturais.
+     * @param n É o número inteiro à ser feito o somatório.
+     * @return Resultado do somatório.
+     */
+    public static int somaNaturais( int n ) throws IllegalArgumentException {
         int i = 1,s = 2;
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");

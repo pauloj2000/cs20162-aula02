@@ -15,7 +15,14 @@ package exerciciosAula02;
  */
 
 public class Exercicio8 {
-    public static int numeroHarmonico(int n){
+
+    /**
+     * Método que nos retorna o número harmônico.
+     * @param n Inteiro que deseja descobrir qual o número harmônico.
+     * @return Inteiro que representa o número harmônico para 'n'.
+     * @throws IllegalArgumentException
+     */
+    public static int numeroHarmonico(int n) throws IllegalArgumentException {
         if( n <= 1 ){
             throw new IllegalArgumentException(" Exige n > 1 ");
         }

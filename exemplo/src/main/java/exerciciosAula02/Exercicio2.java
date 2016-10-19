@@ -15,7 +15,16 @@ package exerciciosAula02;
  */
 
 public class Exercicio2 {
-    public static int produtoUsandoSoma(int a, int b){
+
+    /**
+     * Método que resulta no produto de dois números utilizando soma.
+     * @param a Um dos inteiros para fazer o produto.
+     * @param b O outro inteiro para fazer o produto.
+     * @return Produto de a e b.
+     */
+    public static int produtoUsandoSoma(int a, int b) 
+            throws IllegalArgumentException {
+        
         if( a < 0 ){
             throw new IllegalArgumentException(" Exige a >= 0 ");
         }

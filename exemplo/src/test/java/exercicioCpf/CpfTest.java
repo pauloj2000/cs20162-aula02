@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author paulo_000
+ * @author Paulo Junio Sales Rodrigues
  */
 public class CpfTest {
     

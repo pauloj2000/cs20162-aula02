@@ -10,9 +10,13 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- *
- * @author Alunoinf_2
+ * Testes dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class Exercicio4Test {
     
     public Exercicio4Test() {

@@ -6,14 +6,17 @@
 
 package exerciciosAula02;
 
-import exerciciosAula02.Exercicio2;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author aluno
+ * Testes dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class Exercicio2Test {
     
     public Exercicio2Test() {

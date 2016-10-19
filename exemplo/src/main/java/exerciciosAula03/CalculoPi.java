@@ -15,7 +15,13 @@ package exerciciosAula03;
  */
 
 public class CalculoPi {
-    public static double calcularPi(double n){
+
+    /**
+     * Método que calcula o valor de Pi para um total de n termos.
+     * @param n Quantidade de termos.
+     * @return Valor de pi.
+     */
+    public static double calcularPi(double n) throws IllegalArgumentException {
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");
         }

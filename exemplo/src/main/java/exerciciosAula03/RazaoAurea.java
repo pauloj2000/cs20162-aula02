@@ -15,7 +15,25 @@ package exerciciosAula03;
  */
 
 public class RazaoAurea {
-    public static float razaoAurea(int x, int y, int k){
+
+    /**
+     * Método que descobre a Razão Auréa, explicada abaixo:
+     * A razão áurea pode ser obtida através da aplicação de um processo
+     * iniciado com dois números inteiros positivos, por exemplo 1 e 2.
+     * O número seguinte é obtido com a soma dos dois anteriores da sequência
+     * Nesse exemplo, seria o 3, o seguinte 5, depois 8, depois 13 e assim
+     * sucessivamente. Em algum momento optamos por interromper a geração da 
+     * sequência e nesse ponto, obtemos a razão entre o último número da
+     * sequência e o anterior. Essa é a razão auréa.
+     *
+     * @param x Inteiro que se deseja descobrir a razão áurea.
+     * @param y Inteiro que se deseja descobrir a razão áurea.
+     * @param k Indica a precisão do número desejado.
+     * @return
+     */
+    public static float razaoAurea(int x, int y, int k) throws 
+            IllegalArgumentException {
+        
         if( x < 0 ){
             throw new IllegalArgumentException(" Exige x >= 0 ");
         }

@@ -15,7 +15,14 @@ package exerciciosAula03;
  */
 
 public class QuadradoPerfeito {
-    public static boolean quadradoPerfeito(int k){
+
+    /**
+     * Método que descobre se o número é quadrado perfeito.
+     * @param k Inteiro que se deseja descobrir se contém a propriedade.
+     * @return True se for quadrado perfeito e False se não for.
+     */
+    public static boolean quadradoPerfeito(int k) 
+            throws IllegalArgumentException {
         if( k < 1 ){
             throw new IllegalArgumentException(" Exige k >= 1 ");
         }

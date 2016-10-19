@@ -15,7 +15,16 @@ package exerciciosAula02;
  */
 
 public class Exercicio4 {
-    public static boolean propriedade3025(int n){
+
+    /**
+     * Método que nos diz se um número contém a propriedade 3025.
+     * @param n Número à descobrir se contém a propriedade ou não.
+     * @return True se tiver a propriedade e False se não tiver.
+     * @throws IllegalArgumentException
+     */
+    public static boolean propriedade3025(int n) 
+            throws IllegalArgumentException {
+        
         if( n < 0 || n >= 9999 ){
             throw new IllegalArgumentException(" Exige 0 < n < 9999 ");
         }

@@ -17,11 +17,11 @@ package exerciciosAula02;
 public class Exercicio6 {
 
     /**
-     *
-     * @param n
-     * @return
+     * Método que retorna se um número é ou não é primo.
+     * @param n O número que deseja descobrir.
+     * @return True se for primo e False se não for.
      */
-    public static boolean numeroPrimo( int n ){
+    public static boolean numeroPrimo( int n ) throws IllegalArgumentException {
         int i = 2;
         if( n <= 1 ){
             throw new IllegalArgumentException(" Exige n > 1 ");

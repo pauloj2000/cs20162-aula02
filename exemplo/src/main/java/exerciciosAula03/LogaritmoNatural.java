@@ -15,7 +15,15 @@ package exerciciosAula03;
  */
 
 public class LogaritmoNatural {
-    public static double logNatural(double n, double k){
+
+    /**
+     * Método que descobre o logarítmo natural entre dois números.
+     * @param n Um dos números a ser feito o logarítmo natural.
+     * @param k O outro número a ser feito o logarítmo natural.
+     * @return Resultado do logarítmo natural.
+     */
+    public static double logNatural(double n, double k) 
+            throws IllegalArgumentException {
         
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");

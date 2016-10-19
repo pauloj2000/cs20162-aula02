@@ -33,6 +33,8 @@ public class Cpf {
 
     /**
      * Primeiro método de verificação de CPF.
+     * @param d Dígitos de entrada para formar o CPF através de um vetor.
+     * @return True para um CPF válido e False para um inválido.
      */
     public static boolean cpfTipo1(final int[] d) {
         int tamanho = d.length;
@@ -54,6 +56,8 @@ public class Cpf {
     
     /**
      * Segundo método de verificação de CPF.
+     * @param d Dígitos de entrada para formar o CPF através de um vetor.
+     * @return True para um CPF válido e False para um inválido.
      */
     public static boolean cpfTipo2(final int[] d) {
         int tamanho = d.length;

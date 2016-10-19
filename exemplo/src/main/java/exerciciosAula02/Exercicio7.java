@@ -14,8 +14,17 @@ package exerciciosAula02;
  * @author Paulo Junio Sales Rodrigues
  */
 
+
 public class Exercicio7 {
-    public static void crivoEratostenes( int a[], int n ){
+
+    /**
+     * Método que utiliza o Crivo de Eratostenes
+     * @param a Preenchimento do vetor.
+     * @param n Número inteiro.
+     * @throws IllegalArgumentException
+     */
+    public static void crivoEratostenes( int a[], int n ) 
+            throws IllegalArgumentException {
         if( n <= 1 ){
             throw new IllegalArgumentException(" Exige n > 1 ");
         }

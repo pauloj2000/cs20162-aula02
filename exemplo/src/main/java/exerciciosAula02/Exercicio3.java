@@ -15,7 +15,16 @@ package exerciciosAula02;
  */
 
 public class Exercicio3 {
-    public static int potenciaUsandoSoma(int x, int y){
+
+    /**
+     * Método que resulta na potência de um número utilizando soma.
+     * @param x Número à ser elevado.
+     * @param y Expoente.
+     * @return Resultado da potenciação.
+     */
+    public static int potenciaUsandoSoma(int x, int y) 
+            throws IllegalArgumentException {
+        
         if(x < 0){
             throw new IllegalArgumentException(" x deve ser maior igual a 0 ");
         }

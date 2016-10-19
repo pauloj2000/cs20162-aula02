@@ -9,9 +9,13 @@ package exerciciosAula02;
 import org.junit.Test;
 
 /**
- *
- * @author Alunoinf_2
+ * Testes dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class Exercicio7Test {
     
     public Exercicio7Test() {

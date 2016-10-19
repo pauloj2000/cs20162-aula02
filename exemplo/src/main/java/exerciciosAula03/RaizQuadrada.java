@@ -15,7 +15,16 @@ package exerciciosAula03;
  */
 
 public class RaizQuadrada {
-    public static double raizQuadrada(int n, int i){
+
+    /**
+     * Método que descobre a raíz quadrada de um número.
+     * @param n Número que se deseja descobrir a raíz quadrada.
+     * @param i Parâmetro para descobrir a raíz.
+     * @return A raíz quadrada do número.
+     */
+    public static double raizQuadrada(int n, int i) 
+            throws IllegalArgumentException {
+        
         if( n <= 0 ){
             throw new IllegalArgumentException(" Exige n > 0 ");
         }

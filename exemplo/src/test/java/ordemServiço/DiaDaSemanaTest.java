@@ -10,8 +10,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author paulo_000
+ * Teste do método para identificação do dia da semana de uma data
+ * a partir de outra data considerando várias restrições.
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
 public class DiaDaSemanaTest {
     

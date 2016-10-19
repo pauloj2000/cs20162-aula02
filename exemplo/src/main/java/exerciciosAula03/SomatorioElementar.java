@@ -24,6 +24,7 @@ public class SomatorioElementar {
      * @throws IllegalArgumentException
      */
     public static float somaNaturais(int n) throws IllegalArgumentException {
+        
         float d;
         int i;
         float s;

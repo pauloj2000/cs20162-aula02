@@ -15,6 +15,12 @@ package ordemServiço;
  */
 
 public final class DiaDaSemana {
+    
+    /**
+     * Evita que instância seja criada desnecessariamente.
+     */
+    private DiaDaSemana() {
+    }
 
     /**
      * Valor relativo da casa das centenas no sistema decimal.
@@ -243,11 +249,5 @@ public final class DiaDaSemana {
         }
 
         return !(dia < 1 || dia > diasNoMes[mes]);
-    }
-
-    /**
-     * Evita que instância seja criada desnecessariamente.
-     */
-    private DiaDaSemana() {
     }
 }

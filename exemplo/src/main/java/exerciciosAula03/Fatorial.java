@@ -15,7 +15,13 @@ package exerciciosAula03;
  */
 
 public class Fatorial {
-    public static int calcularFatorial(int n){
+
+    /**
+     * Método que descobre o fatorial de um número.
+     * @param n Número que deseja descobrir o fatorial.
+     * @return O fatorial de 'n'.
+     */
+    public static int calcularFatorial(int n) throws IllegalArgumentException {
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");
         }

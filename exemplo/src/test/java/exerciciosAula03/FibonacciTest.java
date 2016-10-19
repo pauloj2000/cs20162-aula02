@@ -10,9 +10,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author paulo_000
+ * Testes dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class FibonacciTest {
     
     @Test(expected = IllegalArgumentException.class)

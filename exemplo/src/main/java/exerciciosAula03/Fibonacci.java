@@ -15,7 +15,13 @@ package exerciciosAula03;
  */
 
 public class Fibonacci {
-    public static int calcularFibonacci(int n){
+
+    /**
+     * Método que descobre o Fibonacci de um número inteiro.
+     * @param n O número que deseja descobrir.
+     * @return O Fibonacci desse número.
+     */
+    public static int calcularFibonacci(int n) throws IllegalArgumentException {
         if( n < 0 ){
             throw new IllegalArgumentException(" Exige n >= 0" );
         }
