@@ -1,14 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exerciciosAula02;
 
 /**
- *
- * @author paulo_000
+ * Implementação dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class Exercicio8 {
     public static int numeroHarmonico(int n){
         if( n <= 1 ){

@@ -1,14 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exerciciosAula02;
 
 /**
- *
- * @author aluno
+ * Implementação dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
+/**
+* Método que resulta na soma dos primeiros números naturais.
+*/
 public class Exercicio1 {
     public static int somaNaturais( int n ){
         int i = 1,s = 2;

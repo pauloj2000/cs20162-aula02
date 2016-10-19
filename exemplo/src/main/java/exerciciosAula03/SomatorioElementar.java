@@ -1,27 +1,44 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exerciciosAula03;
 
 /**
- *
- * @author paulo_000
+ * Implementação dos algorítmos listados para as aulas 01 e 02
+ * disponibilizados em sala de aula.
+ * Soluções matemáticas para diversos cálculos diferentes
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public class SomatorioElementar {
-    public static int somaNaturais(int n){
-        if( n < 1 ){
-            throw new IllegalArgumentException(" Exige n >= 1 ");
+
+    /**
+     * Metodo que soma os n primeiro numeros naturais
+     *
+     * @param n - int - numero dos n primeiros numeros a serem somados
+     * @return s - valor da soma
+     * @throws IllegalArgumentException
+     */
+    public static float somaNaturais(int n) throws IllegalArgumentException {
+        float d;
+        int i;
+        float s;
+
+        if (n < 1) {
+            throw new IllegalArgumentException(" Exige n >= 1. ");
         }
-        int i = 1;
-        int s = 0;
-        int d;
-        while( i <= n ){
-            d = (i*i) + 1;
-            s = s + 1/d;
-            i = i + i;
+
+        s = 0;
+
+        for (i = 0; i <= n; i++) {
+            d = (float) (1 + Math.pow(i, 2));
+            s += 1 / d;
         }
-        return s;
+
+        return  s;
     }
 }

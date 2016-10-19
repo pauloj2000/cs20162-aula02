@@ -1,14 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package ordemServiço;
 
 /**
- *
- * @author alunoinf
+ *  // Ordem de serviço - baseado em 'necessidade do cliente' // 
+ * Implementação de um método para identificação do dia da semana de uma data
+ * a partir de outra data considerando várias restrições.
+ * 
+ * @author Paulo Junio Sales Rodrigues
  */
+
 public final class DiaDaSemana {
 
     /**

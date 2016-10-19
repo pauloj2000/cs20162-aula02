@@ -1,8 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exerciciosAula03;
 
 import org.junit.Test;
@@ -21,9 +22,9 @@ public class RaizQuadradaTest {
     
     @Test
     public void testRaizQuadrada() {
-        int n = 0;
-        int i = 1;
-        double expResult = 0.25;
+        int n = 81;
+        int i = 9;
+        double expResult = 9;
         double result = RaizQuadrada.raizQuadrada(n, i);
         assertEquals(expResult, result, 0.0);
     }

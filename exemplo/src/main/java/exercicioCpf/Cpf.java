@@ -1,24 +1,39 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exercicioCpf;
 
 /**
- *
- * @author paulo_000
+ * Implementação de um algorítmo que verifica o CPF(Cadastro de Pessoas Físicas)
+ * Se a regra de formação dos dígitos verificados é atendida, retorna verdadeiro
+ * caso contrário, retorna falso.
+ * 
+ * @author Paulo Junio Sales Rodrigues 
  */
 public class Cpf {
     
-    private Cpf() {
-        
+    /**
+     * Evita que instância seja criada desnecessariamente.
+     */
+    private Cpf() {     
     }
 
+    /**
+     * Atributo para definir o tamanho do CPF.
+     */
     public static final int TAMANHO_CPF = 11;
-
+    
+    /**
+     * Atributo para definir o tamanho do vetora ser trabalhado.
+     */
     public static final int TAMANHO_VETOR = 12;
 
+    /**
+     * Primeiro método de verificação de CPF.
+     */
     public static boolean cpfTipo1(final int[] d) {
         int tamanho = d.length;
         if (tamanho < TAMANHO_CPF || tamanho > TAMANHO_CPF) {
@@ -37,6 +52,9 @@ public class Cpf {
         return j == d[9] && k == d[10];
     }
     
+    /**
+     * Segundo método de verificação de CPF.
+     */
     public static boolean cpfTipo2(final int[] d) {
         int tamanho = d.length;
         if (tamanho < TAMANHO_VETOR || tamanho > TAMANHO_VETOR) {
@@ -53,41 +71,6 @@ public class Cpf {
             s += p;
             c--;
         }
-
-        j = (s % 11) % 10;
-        k = ((s - p + 9 * j) % 11) % 10;
-
-        return j == d[10] && k == d[11];
-    }
-
-    public static boolean cpfTipo3(final int[] d) {
-        int tamanho = d.length;
-        if (tamanho < TAMANHO_VETOR || tamanho > TAMANHO_VETOR) {
-            throw new IllegalArgumentException(""
-                    + "O CPF precisa de exatamente 11 dígitos.");
-        }
-
-        int c, p, s, j, k;
-        c = 8;
-        p = d[9];
-        s = d[9];
-
-        p += d[8];
-        s += p;
-        p += d[7];
-        s += p;
-        p += d[6];
-        s += p;
-        p += d[5];
-        s += p;
-        p += d[4];
-        s += p;
-        p += d[3];
-        s += p;
-        p += d[2];
-        s += p;
-        p += d[1];
-        s += p;
 
         j = (s % 11) % 10;
         k = ((s - p + 9 * j) % 11) % 10;

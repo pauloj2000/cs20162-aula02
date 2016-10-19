@@ -1,8 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
+ * Construção de Software - 2016/2
+ * Professor: Fábio Nogueira de Lucena
  */
+
 package exerciciosAula03;
 
 import org.junit.Test;
@@ -19,12 +20,9 @@ public class FatorialTest {
         Fatorial.calcularFatorial(-1);
     }
     
-    @Test
-    public void testFatorial() {
-        int n = 0;
-        int expResult = 1;
-        int result = Fatorial.calcularFatorial(n);
-        assertEquals(expResult, result);
+    @Test(expected = IllegalArgumentException.class)
+    public void nZero(){
+        Fatorial.calcularFatorial(0);
     }
     
     @Test
