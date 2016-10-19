@@ -22,16 +22,20 @@ public class Exercicio8 {
      * @return Inteiro que representa o número harmônico para 'n'.
      * @throws IllegalArgumentException
      */
-    public static int numeroHarmonico(int n) throws IllegalArgumentException {
-        if( n <= 1 ){
-            throw new IllegalArgumentException(" Exige n > 1 ");
+    public static float numeroHarmonico(int n)throws IllegalArgumentException {
+        float i = 2;
+        float s = 1;
+        
+        if(n < 1) {
+            throw new IllegalArgumentException(
+                    " Exige que o número seja maior que 0 ");
         }
-        int i = 2;
-        int s = 1;
-        while( i < n ){
-            s = s + 1/i;
+        
+        while(i <= n) {
+            s = s + 1 / i;
             i = i + 1;
         }
-    return s;        
-    }
+        
+        return s;
+    }   
 }

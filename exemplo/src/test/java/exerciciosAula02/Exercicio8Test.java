@@ -7,6 +7,7 @@
 package exerciciosAula02;
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Testes dos algorítmos listados para as aulas 01 e 02
@@ -18,19 +19,20 @@ import org.junit.Test;
 
 public class Exercicio8Test {
     
-    Exercicio8 x;
+    Exercicio8 h;
     
     public Exercicio8Test() {
-        x = new Exercicio8();
+        h = new Exercicio8();
+    }
+
+    @Test
+    public void testNumeroHarmonico() {
+        assertEquals(2.2833335, Exercicio8.numeroHarmonico(5),1);
     }
     
-    @Test(expected = IllegalArgumentException.class)
-    public void nIgualA1(){
-        Exercicio8.numeroHarmonico(1);
+    @Test (expected = IllegalArgumentException.class)
+    public void testNumeroHarmonicoInvalido() {
+        Exercicio8.numeroHarmonico(0);
     }
     
-    @Test(expected = IllegalArgumentException.class)
-    public void nMenorQue1(){
-        Exercicio8.numeroHarmonico(-3);
-    }
 }
