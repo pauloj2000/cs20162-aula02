@@ -24,27 +24,29 @@ public class Exercicio2Test {
     public Exercicio2Test() {
         x = new Exercicio2();
     }
+
+    @Test
+    public void testProdutoAMaior() {
+        assertEquals(6,Exercicio2.produtoUsandoSoma(3, 2));
+    }
     
-    @Test(expected = IllegalArgumentException.class)
-    public void aMenorQue0(){
-        Exercicio2.produtoUsandoSoma(-1, 2);
+    @Test
+    public void testProdutoBMaior() {
+        assertEquals(6,Exercicio2.produtoUsandoSoma(2, 3));
     }
     
     @Test(expected = IllegalArgumentException.class)
-    public void bMenorQue0(){
-        Exercicio2.produtoUsandoSoma(3, -1);
+    public void testProdutoFatorANegativo() {
+        Exercicio2.produtoUsandoSoma(-2, 3);
     }
 
-    /**
-     * Test of produtoUsandoSoma method, of class Exercicio2.
-     */
-    @Test
-    public void testProdutoUsandoSoma() {
-        int a = 1;
-        int b = 1;
-        int expResult = 0;
-        int result = Exercicio2.produtoUsandoSoma(a, b);
-        assertEquals(expResult, result);
+    @Test(expected = IllegalArgumentException.class)
+    public void testProdutoFatorBNegativo() {
+        Exercicio2.produtoUsandoSoma(2, -3);
     }
     
+    @Test(expected = IllegalArgumentException.class)
+    public void testProdutoFatoresNegativo() {
+        Exercicio2.produtoUsandoSoma(-2, -3);
+    }
 }
