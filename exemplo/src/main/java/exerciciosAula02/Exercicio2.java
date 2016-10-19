@@ -22,33 +22,38 @@ public class Exercicio2 {
      * @param b O outro inteiro para fazer o produto.
      * @return Produto de a e b.
      */
-    public static int produtoUsandoSoma(int a, int b) 
+    public static int produtoUsandoSoma(int a, int b)
             throws IllegalArgumentException {
         
-        if( a < 0 ){
-            throw new IllegalArgumentException(" Exige a >= 0 ");
+        int s;
+        int i;
+        int totalParcelas = a; 
+        int parcela = b; 
+
+        if (a < 0) {
+            throw new IllegalArgumentException(
+                " Os fatores não podem ser negativos ");
         }
-        
-        if( b < 0 ){
-            throw new IllegalArgumentException(" Exige b >= 0 ");
+
+        if (b < 0) {
+            throw new IllegalArgumentException(
+                " Os fatores não podem ser negativos ");
         }
-        
-        int totalParcelas,parcela,i,s;
-        totalParcelas = a;
-        parcela = b;
-        if (b <  a){
+
+        if (b < a) {
             totalParcelas = b;
             parcela = a;
         }
-        i = 1;
+
         s = 0;
-        while( i < totalParcelas){
-            s = s + parcela;
-            i++;
+
+        for (i = 0; i < totalParcelas; i++) {
+            s += parcela;
         }
-    return s;    
+
+        return (s); 
+
     }
-    
+
 }
-        
    
