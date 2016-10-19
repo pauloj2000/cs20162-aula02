@@ -32,6 +32,6 @@ public class Exercicio4 {
         i = n/100;
         j = n%100;
         k = i+j;
-        return k*k == n;
+        return (k*k == n);
     }
 }
