@@ -18,7 +18,7 @@ public class Cpf {
     /**
      * Evita que instância seja criada desnecessariamente.
      */
-    private Cpf() {     
+    public Cpf() {     
     }
 
     /**

@@ -32,7 +32,8 @@ public class Exercicio5 {
         i = n/100;
         j = (n - ( 100*i )) / 10;
         k = n % 10;
-        return ((i*i*i + j*j*j + k*k*k) == n);
+        int variavel = (i*i*i + j*j*j + k*k*k);
+        return (variavel == n);
     }
     
 }

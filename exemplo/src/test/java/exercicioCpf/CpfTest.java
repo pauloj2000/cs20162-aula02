@@ -15,6 +15,12 @@ import static org.junit.Assert.*;
  */
 public class CpfTest {
     
+    Cpf cpf;
+    
+    public CpfTest() {
+        cpf = new Cpf();
+    }
+    
     //Testes para o método "cpfTipo1".
     
     //Teste para um número menor do que o tamanho exigido

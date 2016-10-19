@@ -17,7 +17,10 @@ import static org.junit.Assert.*;
  */
 public class DiaDaSemanaTest {
     
+    DiaDaSemana cemporcento;
+    
     public DiaDaSemanaTest() {
+        cemporcento = new DiaDaSemana();
     }
     
     @Test

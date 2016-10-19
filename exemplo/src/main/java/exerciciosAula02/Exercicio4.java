@@ -32,6 +32,7 @@ public class Exercicio4 {
         i = n/100;
         j = n%100;
         k = i+j;
-        return (k*k == n);
+        int variavel = k*k;
+        return (variavel == n);
     }
 }
