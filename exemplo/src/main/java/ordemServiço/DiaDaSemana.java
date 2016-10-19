@@ -243,6 +243,6 @@ public final class DiaDaSemana {
     /**
      * Evita que instância seja criada desnecessariamente.
      */
-    private Calendario() {
+    private DiaDaSemana() {
     }
 }
