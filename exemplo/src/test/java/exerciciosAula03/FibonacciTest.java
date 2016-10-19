@@ -5,10 +5,6 @@
  */
 package exerciciosAula03;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,37 +14,70 @@ import static org.junit.Assert.*;
  */
 public class FibonacciTest {
     
-    public FibonacciTest() {
+    @Test(expected = IllegalArgumentException.class)
+    public void nMenorQueZero(){
+        Fibonacci.calcularFibonacci(-1);
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of calcularFibonacci method, of class Fibonacci.
-     */
     @Test
-    public void testCalcularFibonacci() {
-        System.out.println("calcularFibonacci");
+    public void testFibo() {
         int n = 0;
         int expResult = 0;
         int result = Fibonacci.calcularFibonacci(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testFibo2() {
+        int n = 1;
+        int expResult = 1;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testFibo3() {
+        int n = 2;
+        int expResult = 1;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testFibo4() {
+        int n = 3;
+        int expResult = 2;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testFibo5() {
+        int n = 4;
+        int expResult = 3;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
     }
     
+    @Test
+    public void testFibo6() {
+        int n = 5;
+        int expResult = 5;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFibo7() {
+        int n = 6;
+        int expResult = 8;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFibo8() {
+        int n = 7;
+        int expResult = 13;
+        int result = Fibonacci.calcularFibonacci(n);
+        assertEquals(expResult, result);
+    }
 }

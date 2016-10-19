@@ -5,10 +5,6 @@
  */
 package exerciciosAula03;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,38 +14,22 @@ import static org.junit.Assert.*;
  */
 public class LogaritmoNaturalTest {
     
-    public LogaritmoNaturalTest() {
+    @Test(expected = IllegalArgumentException.class)
+    public void nMenorQueUm(){
+        LogaritmoNatural.logNatural(0, 2);
     }
     
-    @BeforeClass
-    public static void setUpClass() {
+    @Test(expected = IllegalArgumentException.class)
+    public void kMenorQueDois(){
+        LogaritmoNatural.logNatural(2, 0);
     }
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of logNatural method, of class LogaritmoNatural.
-     */
     @Test
-    public void testLogNatural() {
-        System.out.println("logNatural");
-        int n = 0;
-        int k = 0;
-        double expResult = 0.0;
-        double result = LogaritmoNatural.logNatural(n, k);
+    public void testLogNat() {
+        double a = 1;
+        double b = 2;
+        double expResult = 2.5f;
+        double result = LogaritmoNatural.logNatural(a, b);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
 }

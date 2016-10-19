@@ -10,7 +10,7 @@ package exerciciosAula03;
  * @author paulo_000
  */
 public class LogaritmoNatural {
-    public static double logNatural(int n, int k){
+    public static double logNatural(double n, double k){
         
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");
@@ -22,7 +22,7 @@ public class LogaritmoNatural {
         double e = n + 1;
         while( i <= k ){
             double p = (Math.pow(n , i));
-            float f = Fatorial.calcularFatorial(n);
+            double f = Fatorial.calcularFatorial((int) n);
             e = e + p / f;
             i = i + 1;
         }

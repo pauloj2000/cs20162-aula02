@@ -10,14 +10,14 @@ package exerciciosAula03;
  * @author paulo_000
  */
 public class CalculoPi {
-    public static int calcularPi(int n){
+    public static double calcularPi(double n){
         if( n < 1 ){
             throw new IllegalArgumentException(" Exige n >= 1 ");
         }
-        int i = 1;
-        int s = -1;
-        int d = -1;
-        int p = 0;
+        double i = 1;
+        double s = -1;
+        double d = -1;
+        double p = 0;
         while( i <= n ){
             d = d + 2;
             s = -1 * s;

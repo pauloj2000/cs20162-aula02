@@ -5,10 +5,6 @@
  */
 package exerciciosAula03;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,37 +14,72 @@ import static org.junit.Assert.*;
  */
 public class QuadradoPerfeitoTest {
     
-    public QuadradoPerfeitoTest() {
+    @Test(expected = IllegalArgumentException.class)
+    public void kMenorQueUm(){
+        QuadradoPerfeito.quadradoPerfeito(-1);
     }
     
-    @BeforeClass
-    public static void setUpClass() {
+    @Test
+    public void testQuadPerfeito() {
+        int n = 1;
+        boolean expResult = true;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
     }
     
-    @AfterClass
-    public static void tearDownClass() {
+    @Test
+    public void testQuadPerfeito2() {
+        int n = 10;
+        boolean expResult = false;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
     }
     
-    @Before
-    public void setUp() {
+    @Test
+    public void testQuadPerfeito3() {
+        int n = 144;
+        boolean expResult = true;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void testQuadPerfeito4() {
+        int n = 64;
+        boolean expResult = true;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testQuadPerfeito5() {
+        int n = 2;
+        boolean expResult = false;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testQuadPerfeito6() {
+        int n = 9;
+        boolean expResult = true;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testQuadPerfeito7() {
+        int n = 3;
+        boolean expResult = false;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
+        assertEquals(expResult, result);
     }
 
-    /**
-     * Test of quadradoPerfeito method, of class QuadradoPerfeito.
-     */
     @Test
-    public void testQuadradoPerfeito() {
-        System.out.println("quadradoPerfeito");
-        int k = 0;
-        boolean expResult = false;
-        boolean result = QuadradoPerfeito.quadradoPerfeito(k);
+    public void testQuadPerfeito8() {
+        int n = 25;
+        boolean expResult = true;
+        boolean result = QuadradoPerfeito.quadradoPerfeito(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
 }

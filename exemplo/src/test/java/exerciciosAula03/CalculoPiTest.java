@@ -5,10 +5,6 @@
  */
 package exerciciosAula03;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,37 +14,72 @@ import static org.junit.Assert.*;
  */
 public class CalculoPiTest {
     
-    public CalculoPiTest() {
+    @Test(expected = IllegalArgumentException.class)
+    public void nMenorQueUm(){
+        CalculoPi.calcularPi(0);
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of calcularPi method, of class CalculoPi.
-     */
     @Test
     public void testCalcularPi() {
-        System.out.println("calcularPi");
-        int n = 0;
-        int expResult = 0;
-        int result = CalculoPi.calcularPi(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int n = 1;
+        double expResult = 4.0;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
     }
     
+    @Test
+    public void testCalcularPi2() {
+        int n = 2;
+        double expResult = 2.666666626930237;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi3() {
+        int n = 3;
+        double expResult = 3.4666666388511658;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi4() {
+        int n = 5;
+        double expResult = 3.33968248963356;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi5() {
+        int n = 10;
+        double expResult = 3.0418395549058914;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi6() {
+        int n = 50;
+        double expResult = 3.121594585478306;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi7() {
+        int n = 25;
+        double expResult = 3.1815766245126724;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCalcularPi8() {
+        int n = 99;
+        double expResult = 3.151693342253566;
+        double result = CalculoPi.calcularPi(n);
+        assertEquals(expResult, result, 0.0);
+    }
 }

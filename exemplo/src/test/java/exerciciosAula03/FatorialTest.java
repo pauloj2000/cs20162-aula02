@@ -5,10 +5,6 @@
  */
 package exerciciosAula03;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,37 +14,72 @@ import static org.junit.Assert.*;
  */
 public class FatorialTest {
     
-    public FatorialTest() {
+    @Test(expected = IllegalArgumentException.class)
+    public void nMenorQueUm(){
+        Fatorial.calcularFatorial(-1);
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of calcularFatorial method, of class Fatorial.
-     */
     @Test
-    public void testCalcularFatorial() {
-        System.out.println("calcularFatorial");
+    public void testFatorial() {
         int n = 0;
-        int expResult = 0;
+        int expResult = 1;
         int result = Fatorial.calcularFatorial(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testFatorial2() {
+        int n = 1;
+        int expResult = 1;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial3() {
+        int n = 2;
+        int expResult = 2;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial4() {
+        int n = 3;
+        int expResult = 6;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial5() {
+        int n = 4;
+        int expResult = 24;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial6() {
+        int n = 5;
+        int expResult = 120;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial7() {
+        int n = 6;
+        int expResult = 720;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testFatorial8() {
+        int n = 7;
+        int expResult = 5040;
+        int result = Fatorial.calcularFatorial(n);
+        assertEquals(expResult, result);
+    }
 }
