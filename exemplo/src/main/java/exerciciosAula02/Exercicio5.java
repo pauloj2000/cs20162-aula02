@@ -32,9 +32,7 @@ public class Exercicio5 {
         i = n/100;
         j = (n - ( 100*i )) / 10;
         k = n % 10;
-        boolean buliano;
-        buliano = (i*i*i + j*j*j + k*k*k) == n;
-        return buliano;
+        return (i*i*i + j*j*j + k*k*k) == n;
     }
     
 }
